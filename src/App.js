@@ -1,8 +1,8 @@
 import React from 'react';
-import Routes from "./routes";
+import Rotas from './routes';
 
 export default function App() {
    return (
-       <Routes/>
+       <Rotas/>
    );
 }
