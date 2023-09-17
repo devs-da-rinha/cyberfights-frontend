@@ -17,7 +17,7 @@ const Footer = () => {
       }}
     >
       <Row align={"center"}>
-        <Space size="middle">
+        <Space size="large">
           <img
             src={Logo}
             alt="Logo Cyber Fights"
@@ -26,7 +26,7 @@ const Footer = () => {
             }}
           />
 
-          <Divider type="vertical"/>
+          <Divider type="vertical" />
 
           <img
             src={LogoMB}

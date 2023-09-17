@@ -11,6 +11,7 @@ export default function App() {
           colorBgBase: "#454B4E",
           colorTextBase: "#fff",
           colorText: "#fff",
+          headerColor: "#fff",
         },
       }}
     >
