@@ -9,10 +9,7 @@ const Container = (props) => {
   return (
     <Content
       style={{
-        backgroundColor: "#485356",
         padding: "0 50px",
-        minHeight: 580,
-        
       }}
     >
       {children}
