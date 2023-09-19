@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --card__text--title: black;
+    --card__text--subtitle: black;
+}
+
 .layout {
     background-color: white !important;
 }
@@ -14,6 +19,14 @@
 .slick-dots :not(.slick-active) button {
     background-color: rgba(255, 255, 255, 0.5) !important;
     border-radius: 4px !important;
+}
+
+.ant-card-meta-title {
+    color: var(--card__text--title) !important;
+}
+
+.ant-card-meta-description {
+    color: var(--card__text--subtitle) !important;
 }
 
 .lvl1-color {
