@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --card__text--title: black;
+    --card__text--subtitle: black;
+}
+
+.layout {
+    background-color: white !important;
+}
+
+.slick-dots .slick-active button {
+    background-color: white !important;
+    border-radius: 4px !important;
+}
+
+.slick-dots :not(.slick-active) button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 4px !important;
+}
+
+.ant-card-meta-title {
+    color: var(--card__text--title) !important;
+}
+
+.ant-card-meta-description {
+    color: var(--card__text--subtitle) !important;
+}
+
+.lvl1-color {
+    background-color: #FF6200;
+}
+
+.main__section {
+    min-height: auto !important;
+}
+
+.section__title {
+    color: black !important
+}
+
+.carousel__slide {
+    height: 13rem;
+}
