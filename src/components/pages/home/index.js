@@ -105,7 +105,7 @@ const Home = () => {
   return (
     <Layout className="layout">
       <Header />
-
+      <div className="bg-image"> 
       <Content
         id="landing-cta"
         className="rounded-b-3xl lvl1-color"
@@ -278,7 +278,7 @@ const Home = () => {
           <Collapse items={items} />
         </Container>
       </section>
-
+    </div>
       <Footer />
     </Layout>
   );

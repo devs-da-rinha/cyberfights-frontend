@@ -1,0 +1,6 @@
+.logo-img{
+    background: url(../../../../assets/logo.png), lightgray 50% / cover no-repeat;
+    width: 234.937px;
+    height: 80px;
+    flex-shrink: 0;
+}
