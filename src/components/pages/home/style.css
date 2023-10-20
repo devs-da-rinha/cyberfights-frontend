@@ -44,3 +44,11 @@
 .carousel__slide {
     height: 13rem;
 }
+
+.bg-image{
+    background: url(../../../../assets/bghome.png), lightgray 50% / cover no-repeat;
+    width: 1440px;
+    height: 1127px;
+    flex-shrink: 0;
+    z-index: 10000;
+}
