@@ -1,5 +1,9 @@
 import { Button, Layout, Typography } from "antd";
 import React from "react";
+import { Layout, Row } from "antd";
+import { Typography } from "antd";
+import "./style.css";
+
 
 const HeaderAntd = Layout.Header;
 const { Title } = Typography;
@@ -12,6 +16,7 @@ const Header = () => {
           <Button href="">Acesso</Button>
           <Button className="ml-3">Cadastro</Button>
         </div>
+        <div className="logo-img"></div>
     </HeaderAntd>
   );
 };
