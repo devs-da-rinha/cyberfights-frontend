@@ -1,6 +1,35 @@
 .logo-img{
-    background: url(../../../../assets/logo.png), lightgray 50% / cover no-repeat;
+    background: url(../../../../assets/logo.png);
     width: 234.937px;
     height: 80px;
     flex-shrink: 0;
+}
+
+.glass__header {
+    background: rgba(255, 255, 255, 0.089);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.112);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+.home__header--logo:hover {
+    cursor: pointer;
+}
+
+.header__btns {
+    transition: all 0.4s ease-in-out;
+}
+
+.login__btn:hover {
+    color: white !important;
+    outline: 1px solid white !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.577);
+}
+
+.sign__btn:hover  {
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.577);
+    color: black !important;
+    border-color: transparent !important;
 }

@@ -3,12 +3,32 @@
 @tailwind utilities;
 
 :root {
-    --card__text--title: black;
-    --card__text--subtitle: black;
+    --lv1__color: #0E2A3D;
+    --lv0__color: #0B141A;
+}
+
+body {
+    background-color: var(--lv0__color) !important;
+}
+
+.rotate-270 {
+    rotate: 270deg;
+}
+
+.home__first--bg {
+    background-color: var(--lv1__color) !important;
+}
+
+.home__first--bg2 {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--lv1__color);
+    border-radius: 0 0 50% 50%;
 }
 
 .layout {
-    background-color: white !important;
+    background-color: var(--lv0__color) !important;
 }
 
 .slick-dots .slick-active button {
@@ -21,34 +41,20 @@
     border-radius: 4px !important;
 }
 
-.ant-card-meta-title {
-    color: var(--card__text--title) !important;
-}
-
-.ant-card-meta-description {
-    color: var(--card__text--subtitle) !important;
-}
-
-.lvl1-color {
-    background-color: #FF6200;
-}
-
 .main__section {
     min-height: auto !important;
 }
 
 .section__title {
-    color: black !important
+    text-rendering: optimizeSpeed;
 }
 
 .carousel__slide {
     height: 13rem;
 }
 
-.bg-image{
-    background: url(../../../../assets/bghome.png), lightgray 50% / cover no-repeat;
-    width: 1440px;
-    height: 1127px;
-    flex-shrink: 0;
-    z-index: 10000;
+.bg-home-image{
+    background: url(../../../../assets/bghome.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }

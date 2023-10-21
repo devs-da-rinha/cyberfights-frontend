@@ -14,6 +14,7 @@ const Footer = () => {
     <FooterAntd
       style={{
         textAlign: "center",
+        backgroundColor: "#0E2A3D",
       }}
     >
       <Row align={"center"}>

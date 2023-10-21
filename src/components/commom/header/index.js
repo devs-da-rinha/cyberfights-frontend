@@ -1,22 +1,18 @@
 import { Button, Layout, Typography } from "antd";
 import React from "react";
-import { Layout, Row } from "antd";
-import { Typography } from "antd";
 import "./style.css";
-
 
 const HeaderAntd = Layout.Header;
 const { Title } = Typography;
 
 const Header = () => {
   return (
-    <HeaderAntd style={{ display: "flex", alignItems: "center" }}>
-        <Title>CyberFights</Title>
+    <HeaderAntd className="bg-transparent flex items-center fixed w-full glass__header z-50">
+        <a href="/"><div className="home__header--logo logo-img"></div></a>
         <div className="ms-auto justify-end">
-          <Button href="">Acesso</Button>
-          <Button className="ml-3">Cadastro</Button>
+          <Button className="header__btn login__btn bg-transparent outline outline-1 outline-white text-white" href="">Acesso</Button>
+          <Button className="header__btn sign__btn ml-3 bg-white outline outline-1 outline-white text-black">Cadastro</Button>
         </div>
-        <div className="logo-img"></div>
     </HeaderAntd>
   );
 };

@@ -105,12 +105,12 @@ const Home = () => {
   return (
     <Layout className="layout">
       <Header />
-      <div className="bg-image"> 
       <Content
         id="landing-cta"
-        className="rounded-b-3xl lvl1-color"
-        style={{ maxHeight: "19rem" }}
+        className="lvl1-color home__first--bg pt-20 h-auto"
       >
+        <img src="../../../tech-lines.png" className="absolute rotate-270 opacity-20 left-0"/>
+        <img src="../../../tech-lines.png" className="absolute rotate-90 opacity-20 right-0"/>
         <Container className="min-h-0">
           <div id="landing-cta__content" className="mt-14">
             <div className="landing-cta__content--carousel mb-10">
@@ -142,13 +142,14 @@ const Home = () => {
           </div>
         </Container>
       </Content>
+      <div className="home__first--bg2"></div>
 
       <section className="mt-14 mb-24">
         <Container className="main__section flex justify-center">
           <Title
             id="section__title--1"
             level={2}
-            className="section__title text-center"
+            className="section__title text-center text-white"
           >
             Passo a Passo
           </Title>
@@ -156,17 +157,17 @@ const Home = () => {
             gutter={24}
             className="section__content--1 flex justify-center mt-8"
           >
-            <Col className="section__content__card--1 flex justify-center">
+            <Col className="section__content__card--1 flex justify-center text-white">
               <Card
                 hoverable
                 style={{ width: 340 }}
-                className="bg-white rounded-3xl"
+                className="bg-black rounded-3xl border-black"
                 cover={
                   <Image width={340} height={200} src="https://img.freepik.com/free-vector/blue-futuristic-networking-technology_53876-100679.jpg" />
                 }
               >
                 <Meta
-                  className="text-center"
+                  className="text-center text-white"
                   title="Passo 1"
                   description="Realize seu cadastro"
                 />
@@ -176,13 +177,13 @@ const Home = () => {
               <Card
                 hoverable
                 style={{ width: 340 }}
-                className="bg-white rounded-3xl"
+                className="bg-black rounded-3xl border-black"
                 cover={
                   <Image width={340} height={200} src="https://t3.ftcdn.net/jpg/02/88/80/38/360_F_288803822_0CJ8L3gr6w6nGnUeje6pCllCX7s986xz.jpg" />
                 }
               >
                 <Meta
-                  className="text-center"
+                  className="text-center text-white"
                   title="Passo 2"
                   description="Inscreva-se nas competições"
                 />
@@ -192,13 +193,13 @@ const Home = () => {
               <Card
                 hoverable
                 style={{ width: 340 }}
-                className="bg-white rounded-3xl"
+                className="bg-black rounded-3xl border-black"
                 cover={
                   <Image width={340} height={200} src="https://t4.ftcdn.net/jpg/04/88/09/91/360_F_488099194_S41l188my3QP0S739qCFUqbq8ywKth21.jpg" />
                 }
               >
                 <Meta
-                  className="text-center"
+                  className="text-center text-white"
                   title="Passo 3"
                   description="Acompanhe os resultados"
                 />
@@ -278,7 +279,6 @@ const Home = () => {
           <Collapse items={items} />
         </Container>
       </section>
-    </div>
       <Footer />
     </Layout>
   );
